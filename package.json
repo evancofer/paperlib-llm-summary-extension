@@ -1,0 +1,42 @@
+{
+  "name": "@evancofer/paperlib-llm-summary-extension",
+  "version": "0.1.0",
+  "description": "Summarize papers in Paperlib with an LLM: choose how much of the paper is sent, and replace old summaries without touching your own notes",
+  "author": "evancofer",
+  "main": "dist/main.js",
+  "type": "commonjs",
+  "manifest_version": "0.0.16",
+  "keywords": [
+    "paperlib"
+  ],
+  "files": [
+    "dist"
+  ],
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://github.com/evancofer/paperlib-llm-summary-extension",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evancofer/paperlib-llm-summary-extension.git"
+  },
+  "scripts": {
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "fixtures": "node scripts/fetch-fixtures.mjs",
+    "smoke": "node scripts/sandbox-smoke.cjs"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.3",
+    "@types/node": "^20.19.43",
+    "dompurify": "3.3.0",
+    "jsdom": "26.1.0",
+    "katex": "0.16.2",
+    "markdown-it": "13.0.1",
+    "markdown-it-texmath": "1.0.0",
+    "paperlib-api": "^0.1.11",
+    "pdfjs-dist": "4.10.38",
+    "rollup-plugin-modify": "^3.0.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.7",
+    "vitest": "^3.2.7"
+  }
+}
